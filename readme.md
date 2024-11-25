@@ -4,9 +4,6 @@ Ziel dieser Arbeit ist es, ein Large Language Model (LLM) zu analysieren. Hierf�
 
 Beide Modelle werden mit verschiedensten Prompts getestet um Schlüsse über die Traningdaten und die Funktionsweise des Modells zu ziehen.
 
-<!-- 
-Wichtig! Python 3.9! Höhere Versionen funktionieren nicht! -->
-
 ## 1. Installation
 
 ### 1.1. Clonen des Repositories
@@ -19,7 +16,8 @@ git clone https://github.com/KaganDemirer/XAI.git
 
 ### 1.2. Installation der benötigten Bibliotheken
 
-Um den geschriebenen Code auszuführen muss Python installiert sein. Die Version 3.9 wird empfohlen.
+Um den geschriebenen Code auszuführen muss Python installiert sein.
+Getestet wurde mit 3.9.6
 Höhere Python Versionen wurden nicht getestet und könnten zu Fehlern führen.
 
 Zuerst müssen die benötigten Python Bibliotheken installiert werden. Hierfür kann die `requirements.txt` Datei verwendet werden.
@@ -35,6 +33,11 @@ Anschließend können die Jupyter Notebooks ausgeführt werden. Vor der Ausführ
 
 ## 3. Bekannte Probleme
 
+Es gab Schwierigkeiten bei der Implementierung von Modellen. In einigen Fällen war eine Berechtigung erforderlich. Andere Modelle waren aufgrund ihres Speicherplatzbedarfs zu groß. Einige Modelle lieferten am Ende keine zufriedenstellenden Ergebnisse und waren daher nicht auswertbar.
+
 ## 4. Quellen
 
-
+https://medium.com/@TaaniyaArora/visualizing-gpt2-word-embeddings-on-tensorboard-ea5c8fef9efa
+https://nnsight.net/notebooks/tutorials/logit_lens/
+https://huggingface.co/microsoft/phi-1_5
+https://huggingface.co/openai-community/gpt2
