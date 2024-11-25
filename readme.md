@@ -1,6 +1,6 @@
 # Post-Hoc Analyse eines Large Language Model (LLM) mit Logit Lens
 
-Ziel dieser Arbeit ist es, ein Large Language Model (LLM) zu analysieren. Hierfür wird ein Logit Lens verwendet, um die Entscheidungen des Modells zu visualisieren und zu interpretieren. Hierfür werden zwei Large Language Models verwendet: OpenAI's GPT-2 und Phi 1_5 von Facebook.
+Ziel dieser Arbeit ist es, ein Large Language Model (LLM) zu analysieren. Hierfür wird ein Logit Lens verwendet, um die Entscheidungen des Modells zu visualisieren und zu interpretieren. Hierfür werden zwei Large Language Models verwendet: OpenAI's GPT-2 und Phi 1_5 von Microsoft.
 
 Beide Modelle werden mit verschiedensten Prompts getestet um Schlüsse über die Traningdaten und die Funktionsweise des Modells zu ziehen.
 
