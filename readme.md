@@ -57,6 +57,7 @@ Ein weiteres, noch nicht behobenes Problem tritt bei der Verwendung von Phi 1_5 
 In einigen Fällen gelingt es nicht die benötigten Daten aus dem meta tensor zu extrahieren. Dies führt dazu, dass das Skript an dieser Stelle abbricht. Zum aktuellen Zeitpunkt ist noch nicht klar, wie dieser Fehler behoben werden kann.
 
 Da dieser Fehler allerdings nicht immer auftritt, kann es sein, dass das Skript bei erneutem Ausführen ohne Probleme durchläuft.
+Andernfalls empfehlen wir die einzelne Zelle alleine auszuführen, da dies in der Vergangenheit öfters das Problem gelöst hat.
 
 ## 5. Fortschritt des Projekts
 Der folgende Abschnitt beschreibt den fortlaufenden Prozess des Projekts. Dabei wird auch auf die einzelnen Implementierungen eingegangen sowie auf die Probleme, die während der Implementierung aufgetreten sind.
@@ -112,6 +113,11 @@ Betrachtet man einen Prompt auf Englisch, fällt auf, dass (fast) keine Tokens v
 
 ![example phi 1_5](example/pure_english.png)
 
+Der gleiche Test lässt sich ebenfalls bei Phi 1_5 durchführen.
+Und erzielt dabei ein ähnliches Ergebnis.
+
+Die anderen Aussagen wurden ebenfalls mithilfe von Prompts analysiert und bestätigt. Diese und weitere Analysen lassen sich im Notebook zu GPT-2 nochmals durchführen.
+
 
 
 ### 5.2.2. Analyse von Phi 1_5
@@ -119,6 +125,10 @@ Betrachtet man einen Prompt auf Englisch, fällt auf, dass (fast) keine Tokens v
 #### Aussagen zu den Trainingsdaten
 - Phi 1_5 wurde mit den selben Daten wie Phi 1 trainiert. --> Fokus auf Programmierung
 - Common Crawl wurde aus dem Training entfernt. --> Kein verletzender Inhalt/verletzender Inhalt wurde reduziert
+
+Die Analyse von Phi 1_5 konnte aufgrund der bereits beschriebenen Probleme nur eingeschränkt und nicht in gleichem Umfang wie bei GPT-2 durchgeführt werden. Dennoch konnten einige Aussagen bestätigt werden.
+
+## 5.3. Zusätzliche Analyse
 
 ## 6. Quellen
 
