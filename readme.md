@@ -116,6 +116,9 @@ Betrachtet man einen Prompt auf Englisch, fällt auf, dass (fast) keine Tokens v
 Der gleiche Test lässt sich ebenfalls bei Phi 1_5 durchführen.
 Und erzielt dabei ein ähnliches Ergebnis.
 
+Des weiteren viel bei den Tests beispielsweise auf, dass GPT-2 anscheinend mit größtenteils Temperatur-Daten oder -Bezeichnungen der Celcius-Skala trainiert wurde.
+Entsprechende Visualisierungen zu dieser Annahme finden sich im Repository im results Ordner.
+
 Die anderen Aussagen wurden ebenfalls mithilfe von Prompts analysiert und bestätigt. Diese und weitere Analysen lassen sich im Notebook zu GPT-2 nochmals durchführen.
 Einige Ergebnisse des Tests sind im Repository abgespeichert.
 
