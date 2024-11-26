@@ -161,6 +161,7 @@ Aufgrund des begrenzten Umfangs und der begrenzten Zeit konnten wir leider keine
 
 - https://huggingface.co/transformers/v2.11.0/model_doc/gpt2.html
 
+- https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens
 
 
 ## 6. Kontakt
