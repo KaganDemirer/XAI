@@ -117,7 +117,7 @@ Der gleiche Test lässt sich ebenfalls bei Phi 1_5 durchführen.
 Und erzielt dabei ein ähnliches Ergebnis.
 
 Die anderen Aussagen wurden ebenfalls mithilfe von Prompts analysiert und bestätigt. Diese und weitere Analysen lassen sich im Notebook zu GPT-2 nochmals durchführen.
-
+Einige Ergebnisse des Tests sind im Repository abgespeichert.
 
 
 ### 5.2.2. Analyse von Phi 1.5
@@ -126,9 +126,21 @@ Die anderen Aussagen wurden ebenfalls mithilfe von Prompts analysiert und bestä
 - Phi 1.5 wurde mit den selben Daten wie Phi 1 trainiert. --> Fokus auf Programmierung
 - Common Crawl wurde aus dem Training entfernt. --> Kein verletzender Inhalt/verletzender Inhalt wurde reduziert
 
-Die Analyse von Phi 1_5 konnte aufgrund der bereits beschriebenen Probleme nur eingeschränkt und nicht in gleichem Umfang wie bei GPT-2 durchgeführt werden. Dennoch konnten einige Aussagen bestätigt werden.
+Die Analyse von Phi 1_5 konnte aufgrund der bereits beschriebenen Probleme nur eingeschränkt und nicht in gleichem Umfang wie bei GPT-2 durchgeführt werden. Dennoch konnten einige Aussagen überprüft werden.
+
+Auch hierzu finden sich einige Ergebnisse aus den Tests im Repository.
+
+
 
 ## 5.3. Zusätzliche Analyse
+
+Ergänzend zur Implementierung und Analyse der Modelle mit Logit Lens wurde ein Tensorboard für beide Modelle erstellt. Dieses Tensorboard zeigt die Word Embeddings der Modelle und ermöglicht eine weitere Analyse der Modelle.
+
+Aufgrund des begrenzten Umfangs und der begrenzten Zeit konnten wir leider keine Analyse mithilfe des Tensorboards durchführen. Dennoch ist das Tensorboard eine nützliche Ergänzung zur Analyse der Modelle und im Repository verfügbar.
+
+<a href="tensorboard_gpt2.ipynb">Hier geht's zum GPT-2 Tensorboard</a>
+
+<a href="tensorboard_phi1_5.ipynb">Hier geht's zum Phi 1.5 Tensorboard</a>
 
 ## 6. Quellen
 
@@ -145,6 +157,8 @@ Die Analyse von Phi 1_5 konnte aufgrund der bereits beschriebenen Probleme nur e
 - https://huggingface.co/openai-community/gpt2
 
 - https://huggingface.co/transformers/v2.11.0/model_doc/gpt2.html
+
+- https://medium.com/@TaaniyaArora/visualizing-gpt2-word-embeddings-on-tensorboard-ea5c8fef9efa
 
 
 ## 6. Kontakt
