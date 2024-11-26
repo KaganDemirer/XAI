@@ -113,7 +113,7 @@ Betrachtet man einen Prompt auf Englisch, fällt auf, dass (fast) keine Tokens v
 
 ![example phi 1.5](example/pure_english.png)
 
-Der gleiche Test lässt sich ebenfalls bei Phi 1_5 durchführen.
+Der gleiche Test lässt sich ebenfalls bei Phi 1.5 durchführen.
 Und erzielt dabei ein ähnliches Ergebnis.
 
 Des weiteren viel bei den Tests beispielsweise auf, dass GPT-2 anscheinend mit größtenteils Temperatur-Daten oder -Bezeichnungen der Celcius-Skala trainiert wurde.
@@ -129,7 +129,7 @@ Einige Ergebnisse des Tests sind im Repository abgespeichert.
 - Phi 1.5 wurde mit den selben Daten wie Phi 1 trainiert. --> Fokus auf Programmierung
 - Common Crawl wurde aus dem Training entfernt. --> Kein verletzender Inhalt/verletzender Inhalt wurde reduziert
 
-Die Analyse von Phi 1_5 konnte aufgrund der bereits beschriebenen Probleme nur eingeschränkt und nicht in gleichem Umfang wie bei GPT-2 durchgeführt werden. Dennoch konnten einige Aussagen überprüft werden.
+Die Analyse von Phi 1.5 konnte aufgrund der bereits beschriebenen Probleme nur eingeschränkt und nicht in gleichem Umfang wie bei GPT-2 durchgeführt werden. Dennoch konnten einige Aussagen überprüft werden.
 
 Auch hierzu finden sich einige Ergebnisse aus den Tests im Repository.
 
