@@ -161,7 +161,6 @@ Aufgrund des begrenzten Umfangs und der begrenzten Zeit konnten wir leider keine
 
 - https://huggingface.co/transformers/v2.11.0/model_doc/gpt2.html
 
-- https://medium.com/@TaaniyaArora/visualizing-gpt2-word-embeddings-on-tensorboard-ea5c8fef9efa
 
 
 ## 6. Kontakt
