@@ -179,7 +179,9 @@ Ergänzend zur Implementierung und Analyse der Modelle mit Logit Lens wurde ein 
 
 Die Tensorboards wurden ursprünglich als Backup erstellt, für den Fall, dass die Analyse mit dem Logit Lens nicht erfolgreich ist.
 
-Aufgrund des begrenzten Umfangs und der begrenzten Zeit konnten wir leider keine tiefergehenden Analysen mithilfe der Tensorboards durchführen. Dennoch sind die Tensorboards eine nützliche Ergänzung zur Analyse der Modelle und im Repository verfügbar.
+Aufgrund des begrenzten Umfangs und der begrenzten Zeit konnten wir leider keine tiefergehenden Analysen mithilfe der Tensorboards durchführen. Dennoch sind die Tensorboards eine nützliche Ergänzung zur Analyse der Modelle.
+
+Aus diesem Grund haben wir uns entschieden, die Tensorboards im Repository zu belassen und nicht zu löschen.
 
 <a href="tensorboard_gpt2.ipynb">Hier geht's zum GPT-2 Tensorboard</a>
 
