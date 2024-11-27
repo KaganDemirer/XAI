@@ -1,10 +1,41 @@
 # Post-Hoc Analyse eines Large Language Model (LLM) mit Logit Lens
 
+<p class="note">Wahlfachprojekt im Modul "Explainable Artificial Intelligence" im Studiengang "Bachelor of Science in Informatik" an der Dualen Hochschule Baden-Württemberg.</p>
+
+<p class="note">von Kagan Demirer und Claudius Laur, 01.12.2024 Stuttgart GERMANY</p>
+
+## Einleitung
+
 Ziel dieser Arbeit ist es, ein Large Language Model (LLM) zu analysieren. Hierfür wird ein Logit Lens verwendet, um die Entscheidungen des Modells zu visualisieren und zu interpretieren. Hierfür werden zwei Large Language Models verwendet: OpenAI's GPT-2 und Phi 1.5 von Microsoft.
 
 Beide Modelle werden mit verschiedensten Prompts getestet um Schlüsse über die Traningdaten und die Funktionsweise des Modells zu ziehen.
 
+## Inhaltsverzeichnis
+
+1. [Installation](#1-installation)
+    1. [Clonen des Repositories](#11-clonen-des-repositories)
+    2. [Installation der benötigten Bibliotheken](#12-installation-der-benötigten-bibliotheken)
+2. [Anwendung](#2-anwendung)
+3. [Beispiel](#3-beispiel)
+4. [Bekannte Probleme](#4-bekannte-probleme)
+5. [Fortschritt des Projekts](#5-fortschritt-des-projekts)
+    1. [Implementierung](#51-implementierung)
+        1. [Implementierung von GPT-2](#511-implementierung-von-gpt-2)
+        2. [Implementierung von Phi 1.5](#512-implementierung-von-phi-15)
+    2. [Analyse](#52-analyse)
+        1. [Analyse von GPT-2](#521-analyse-von-gpt-2)
+        2. [Analyse von Phi 1.5](#522-analyse-von-phi-15)
+    3. [Zusätzliche Analyse](#53-zusätzliche-analyse)
+6. [Quellen](#6-quellen)
+7. [Kontakt](#7-kontakt)
+
+
+
+
+
 ## 1. Installation
+
+Im folgenden Abschnitt wird die Installation der benötigten Bibliotheken und die Ausführung der Jupyter Notebooks beschrieben.
 
 ### 1.1. Clonen des Repositories
 
@@ -30,6 +61,8 @@ pip install -r requirements.txt
 ## 2. Anwendung
 
 Anschließend können die Jupyter Notebooks ausgeführt werden. Vor der Ausführung kann im Jupyter Notebook über die Variable 'prompt' der Text, der analysiert werden soll, geändert werden.
+
+Sollten Probleme bei der Ausführung auftreten, springen Sie bitte zu <a href="#4-bekannte-probleme">Abschnitt 4 "Bekannte Probleme"</a> oder treten Sie mit uns in <a href="#6-kontakt">Kontakt</a>.
 
 ## 3. Beispiel
 
@@ -134,12 +167,19 @@ Die Analyse von Phi 1.5 konnte aufgrund der bereits beschriebenen Probleme nur e
 Auch hierzu finden sich einige Ergebnisse aus den Tests im Repository.
 
 
+Bei den Tests zu Phi 1.5 fiel auf, dass das Model bei Temperatur-Angaben, diese meist in der Celcius-Skala angibt, unabhängig von der Sprache der vorausgegangenen Token. Dies lässt darauf schließen, dass das Model mit Temperatur-Daten trainiert wurde, welche wohl meist in Celcius angegeben sind.
+Ähnliche Ergebnisse wie bei Phi 1.5 wurden im nachträglichen Vergleich auch bei GPT-2 erzielt.
+Auch hier wurde auf eine ausführliche Darstellung der Tests in der readme-Datei verzichtet, da dies der Übersichtlichkeit schaden würde. Die Ergebnisse aus diesen und weiteren Tests finden sich im Repository im results Ordner.
+
+<a href="results/">Hier geht's zu den Testergebnissen im results-Ordner</a>
 
 ## 5.3. Zusätzliche Analyse
 
 Ergänzend zur Implementierung und Analyse der Modelle mit Logit Lens wurde ein Tensorboard für beide Modelle erstellt. Dieses Tensorboard zeigt die Word Embeddings der Modelle und ermöglicht eine weitere Analyse der Modelle.
 
-Aufgrund des begrenzten Umfangs und der begrenzten Zeit konnten wir leider keine Analyse mithilfe des Tensorboards durchführen. Dennoch ist das Tensorboard eine nützliche Ergänzung zur Analyse der Modelle und im Repository verfügbar.
+Die Tensorboards wurden ursprünglich als Backup erstellt, für den Fall, dass die Analyse mit dem Logit Lens nicht erfolgreich ist.
+
+Aufgrund des begrenzten Umfangs und der begrenzten Zeit konnten wir leider keine tiefergehenden Analysen mithilfe der Tensorboards durchführen. Dennoch sind die Tensorboards eine nützliche Ergänzung zur Analyse der Modelle und im Repository verfügbar.
 
 <a href="tensorboard_gpt2.ipynb">Hier geht's zum GPT-2 Tensorboard</a>
 
@@ -164,32 +204,58 @@ Aufgrund des begrenzten Umfangs und der begrenzten Zeit konnten wir leider keine
 - https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens
 
 
-## 6. Kontakt
+## 7. Kontakt
 
 Bei Fragen oder Anregungen können Sie sich gerne an uns wenden.
 
-
-### Kagan Demirer
+<div class="horizontalflex">
+<div class="verticalflex">
+<b>Kagan Demirer</b>
 
 <img src="https://avatars.githubusercontent.com/u/94038933?v=4" class="profile-picture" alt="Kagan Demirer Profilepicture">
 
-Mail: privat@kagandemirer.de
-
+Mail: privat@kagandemirer.de</br>
 [GitHub Profile](https://github.com/KaganDemirer)
-
-### Claudius Laur
+</div>
+<div class="verticalflex">
+<b>Claudius Laur</b>
 
 <img src="https://avatars.githubusercontent.com/u/121173722?v=4" class="profile-picture" alt="Claudius Laur Profilepicture">
 
-Mail: privat@claudiuslaur.de
-
+Mail: privat@claudiuslaur.de</br>
 [GitHub Profile](https://github.com/DrmedAllel)
+</div>
+</div>
 
+</br>
+</br>
+
+<p class="note">Wir versichern hiermit, dass unsere Projektarbeit selbstständig
+verfasst wurde und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt
+wurden.</p>
 
 
 <style>
 .profile-picture {
     border-radius: 50%;
     width: 75px;
+    margin-bottom: 10px;
+}
+
+.horizontalflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20%;
+}
+
+.verticalflex {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.note {
+    font-size: 10px;
 }
 </style>
