@@ -2,7 +2,11 @@
 
 <p class="note">Wahlfachprojekt im Modul "Explainable Artificial Intelligence" im Studiengang "Bachelor of Science in Informatik" an der Dualen Hochschule Baden-Württemberg.</p>
 
-<p class="note">von Kagan Demirer und Claudius Laur, 01.12.2024 Stuttgart GERMANY</p>
+<p class="note">von Kagan Demirer und Claudius Laur, 1444877 & 5642666 TINF22E, 01.12.2024 Stuttgart GERMANY</p>
+
+<p class="note">Wir versichern hiermit, dass unsere Projektarbeit selbstständig
+verfasst wurde und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt
+wurden.</p>
 
 ## Einleitung
 
@@ -26,8 +30,9 @@ Beide Modelle werden mit verschiedensten Prompts getestet um Schlüsse über die
         1. [Analyse von GPT-2](#521-analyse-von-gpt-2)
         2. [Analyse von Phi 1.5](#522-analyse-von-phi-15)
     3. [Zusätzliche Analyse](#53-zusätzliche-analyse)
-6. [Quellen](#6-quellen)
-7. [Kontakt](#7-kontakt)
+6. [Fazit](#6-fazit)
+7. [Quellen](#7-quellen)
+8. [Kontakt](#8-kontakt)
 
 
 
@@ -98,10 +103,13 @@ Der folgende Abschnitt beschreibt den fortlaufenden Prozess des Projekts. Dabei 
 ## 5.1. Implementierung
 
 Inhalt dieses Projekts ist die Implementierung von zwei verschiedenen Large Language Models (LLM) und die Analyse der Modelle mithilfe eines Logit Lens. Hierfür wurden zwei Modelle ausgewählt: GPT-2 von OpenAI und Phi 1.5 von Microsoft.
+Ziel des Projekts war es durch eine Post-Hoc Analyse mit Logit Lens die Modelle nachträglich zu analysieren und an geeigneten Stellen mit einander zu vergleichen. Hierbei lag der Fokus weniger auf den erzielten Ergebnissen, sondern vielmehr auf dem Prozess der Analyse und der Implementierung.
+Dabei entstand ein Jupyter Notebook für jedes Modell, in dem die Modelle getestet und analysiert wurden.
 
 ### 5.1.1. Implementierung von GPT-2
 
 Zuerst wurde das Modell GPT-2 von OpenAI implementiert. Aufgrund der weitreichenden Verbreitung und gut dokumentierter Implementierungen war die Implementierung des Modells relativ einfach. Die Implementierung des Modells erfolgte in einem Jupyter Notebook, in dem die Funktionsweise des Modells getestet wurde.
+Der kommentierte Code ist im Jupyter Notebook zu finden.
 
 <a href="gpt2.ipynb">Hier geht's zum GPT-2 Notebook</a>
 
@@ -116,6 +124,7 @@ Die Implementierung von Phi 1.5 erfolgte ebenfalls in einem Jupyter Notebook. Au
 <a href="phi1.5.ipynb">Hier geht's zum Phi 1.5 Notebook</a>
 
 Im Bezug auf das Projektziel, die Analyse der Modelle mithilfe eines Logit Lens, war die Implementierung von Phi 1.5 ein wichtiger Schritt. Durch die Implementierung von zwei verschiedenen Modellen konnten die Modelle miteinander verglichen werden, jedoch hat dieser Schritt aufgrund der vielen Probleme und des Trial and Error Prozesses viel Zeit in Anspruch genommen, welche uns für eine genauere Analyse der Modelle fehlte.
+Weitere Informationen zu dem Trial and Error Prozess sowie dem alternativ Plan findet sich im Abschnitt [Zusätzliche Analyse](#53-zusätzliche-analyse).
 
 ## 5.2. Analyse
 
@@ -123,6 +132,7 @@ Ziel des Projekts war es, wie bereits beschrieben die Modelle mithilfe eines Log
 Dabei wurde versucht Schlüsse auf die Traningsdaten des jeiligen Modells zu ziehen oder bereits bekannte Trainingsdaten anhand der Entscheidungen des Modells zu bestätigen.
 
 Dazu wurden die Trainingsdaten beziehungsweise die Aussagen zu den Trainingsdaten analysiert und ausgehend davon zu bestätigende Thesen aufgestellt. Anschließend wurden die Modelle mit verschiedenen Prompts getestet, um die Thesen zu bestätigen oder zu widerlegen.
+Parallel sind uns beim Testen der Modelle auch weitere interessante Erkenntnisse aufgefallen, die ebenfalls dokumentiert wurden.
 
 ### 5.2.1. Analyse von GPT-2
 
@@ -187,26 +197,31 @@ Aus diesem Grund haben wir uns entschieden, die Tensorboards im Repository zu be
 
 <a href="tensorboard_phi1_5.ipynb">Hier geht's zum Phi 1.5 Tensorboard</a>
 
-## 6. Quellen
-
-- https://medium.com/@TaaniyaArora/visualizing-gpt2-word-embeddings-on-tensorboard-ea5c8fef9efa
-
-- https://nnsight.net/notebooks/tutorials/logit_lens/
-
-- <a href="https://arxiv.org/abs/2309.05463">Li, Y., Bubeck, S., Eldan, R., Del Giorno, A., Gunasekar, S., & Lee, Y. T. (2023). Textbooks are all you need II: phi-1.5 technical report. arXiv preprint arXiv:2309.05463.</a>
-
-- https://huggingface.co/microsoft/phi-1.5
-
-- <a href="https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf">Radford, Alec, Jeff Wu, Rewon Child, David Luan, Dario Amodei and Ilya Sutskever. “Language Models are Unsupervised Multitask Learners.” (2019).</a>
-
-- https://huggingface.co/openai-community/gpt2
-
-- https://huggingface.co/transformers/v2.11.0/model_doc/gpt2.html
-
-- https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens
+## 6. Fazit
+Aus dem Projekt konnten wir einige interessante Kenntnisse zu den jeweiligen Modellen und deren Trainingsdaten erlangen.
+Die Implementierung von Logit Lens hat für Phi 1.5 dabei leider sehr viel Zeit in Anspruch genommen, weshalb wir nicht so tief in die Analyse einsteigen konnten, wie wir es uns gewünscht hätten. Dennoch bietet dieses Projekt eine gute Grundlage für weitergehende Analysen der Modelle, welche dann auch gegebenenfalls zu belegbaren Schlüssen führen können.
 
 
-## 7. Kontakt
+## 7. Quellen
+
+1. https://medium.com/@TaaniyaArora/visualizing-gpt2-word-embeddings-on-tensorboard-ea5c8fef9efa
+
+2. https://nnsight.net/notebooks/tutorials/logit_lens/
+
+3. <a href="https://arxiv.org/abs/2309.05463">Li, Y., Bubeck, S., Eldan, R., Del Giorno, A., Gunasekar, S., & Lee, Y. T. (2023). Textbooks are all you need II: phi-1.5 technical report. arXiv preprint arXiv:2309.05463.</a>
+
+4. https://huggingface.co/microsoft/phi-1.5
+
+5. <a href="https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf">Radford, Alec, Jeff Wu, Rewon Child, David Luan, Dario Amodei and Ilya Sutskever. “Language Models are Unsupervised Multitask Learners.” (2019).</a>
+
+6. https://huggingface.co/openai-community/gpt2
+
+7. https://huggingface.co/transformers/v2.11.0/model_doc/gpt2.html
+
+8. https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens
+
+
+## 8. Kontakt
 
 Bei Fragen oder Anregungen können Sie sich gerne an uns wenden.
 
@@ -216,6 +231,7 @@ Bei Fragen oder Anregungen können Sie sich gerne an uns wenden.
 
 <img src="https://avatars.githubusercontent.com/u/94038933?v=4" class="profile-picture" alt="Kagan Demirer Profilepicture">
 
+Matrikelnummer: 5642666</br>
 Mail: privat@kagandemirer.de</br>
 [GitHub Profile](https://github.com/KaganDemirer)
 </div>
@@ -224,6 +240,7 @@ Mail: privat@kagandemirer.de</br>
 
 <img src="https://avatars.githubusercontent.com/u/121173722?v=4" class="profile-picture" alt="Claudius Laur Profilepicture">
 
+Matrikelnummer: 1444877</br>
 Mail: privat@claudiuslaur.de</br>
 [GitHub Profile](https://github.com/DrmedAllel)
 </div>
@@ -232,9 +249,7 @@ Mail: privat@claudiuslaur.de</br>
 </br>
 </br>
 
-<p class="note">Wir versichern hiermit, dass unsere Projektarbeit selbstständig
-verfasst wurde und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt
-wurden.</p>
+
 
 
 <style>
