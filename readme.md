@@ -201,6 +201,8 @@ Aus diesem Grund haben wir uns entschieden, die Tensorboards im Repository zu be
 Aus dem Projekt konnten wir einige interessante Kenntnisse zu den jeweiligen Modellen und deren Trainingsdaten erlangen.
 Die Implementierung von Logit Lens hat für Phi 1.5 dabei leider sehr viel Zeit in Anspruch genommen, weshalb wir nicht so tief in die Analyse einsteigen konnten, wie wir es uns gewünscht hätten. Dennoch bietet dieses Projekt eine gute Grundlage für weitergehende Analysen der Modelle, welche dann auch gegebenenfalls zu belegbaren Schlüssen führen können.
 
+Nachträglich wäre es zudem sinnvoll gewesen bereits im voraus klare Thesen aufzustellen, welche es zu untersuchen gibt. Dies hätte die Analyse der Modelle deutlich vereinfacht und beschleunigt.
+
 
 ## 7. Quellen
 
